@@ -1,6 +1,18 @@
 import java.util.Locale;
 import java.util.Scanner;
 
+/**
+ * <h1>Classe ContaTerminal</h1>
+ * Recebe as informações de:
+ * <ul>
+ * <li>número da conta;</li>
+ * <li>código da agência;</li>
+ * <li>nome do cliente;</li>
+ * <li>saldo</li>
+ * </ul>
+ * relativos a uma conta bancária e imprime na tela uma mensagem final com os
+ * valores inseridos.
+ */
 
 public class ContaTerminal {
     public static void main(String[] args) throws Exception {
@@ -20,7 +32,9 @@ public class ContaTerminal {
         System.out.print("Saldo (ex: 237.48): ");
         double accountBalance = scanner.nextDouble();
 
-        System.out.println("\nOlá, " + customerName + "!\nObrigado por criar uma conta em nosso banco. \nSua agência é " + branchCode + ", conta " + accountNumber + " e o saldo de " + accountBalance + " já está disponível para saque.");
+        System.out.println("\nOlá, " + customerName + "!\nObrigado por criar uma conta em nosso banco. \nSua agência é "
+                + branchCode + ", conta " + accountNumber + " e o saldo de " + accountBalance
+                + " já está disponível para saque.");
 
         scanner.close();
     }
